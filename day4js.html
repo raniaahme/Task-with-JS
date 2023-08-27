@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body onkeydown="stop_clock(event)">
+        
+        <button   id="start"onclick="clock();" style="height: 30px;" >start clock</button><br>
+        <span id="cl" ></span>
+       <textarea  onkeypress="display(event,this);" onmousedown="mouse_display(event);event.preventDefault();"></textarea><br>
+      
+       <img src="./imgs/1.jpg" id="imges"><br><br>
+       <button onclick="play();">play</button>
+       <button onclick="next();"  >next</button>
+       <button onclick="preves();" >prev</button>
+       <button onclick="stop();">stop</button><br><br>
+       <img src="./imgs/1.jpg" id="imges1"onmouseover="increas_opc(this);"onmouseleave="decreas_opc(this);">
+       <img src="./imgs/2.jpg" id="imges2"onmouseover="increas_opc(this);"onmouseleave="decreas_opc(this);">
+       <img src="./imgs/3.jpg" id="imges3"onmouseover="increas_opc(this);"onmouseleave="decreas_opc(this);">
+       <img src="./imgs/4.jpg" id="imges4"onmouseover="increas_opc(this);"onmouseleave="decreas_opc(this);">
+       
+ 
+        <script src="day4js.js"></script>
+    </body>
+</html>
